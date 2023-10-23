@@ -7,21 +7,8 @@
 
 {% for x in sc %}
 
-  
-  <div class="col-md-12">
-    <div class="post post-thumb">
-      <a class="post-img" href="{% url 'blog-post' x.id %}"><img src="{{x.img.url}}" alt
-          ><noscript><img src="{% static 'img/post-2.jpg' %}"
-            alt></noscript></a>
-      <div class="post-body">
-        <div class="post-meta">
-          <a class="post-category cat-3" href="{% url 'category' x.id %}">{{x.category}}</</a>
-          <span class="post-date">March 27, 2018</span>
-        </div>
-        <h3 class="post-title"><a href="{% url 'blog-post' x.id %}"></a></h3>
-      </div>
-    </div>
-  </div>
+{{x.category}}
+
 
 {% endfor %}
 
